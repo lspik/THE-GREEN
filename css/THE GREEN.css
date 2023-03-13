@@ -1,0 +1,446 @@
+::-webkit-scrollbar {
+  width: 10rem;
+}
+
+::-webkit-scrollbar-track {
+  background: #EDC5AB;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #335529;
+  border-radius: 8rem;
+}
+@keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@font-face {
+    font-family: 'BebasNeue-Regular';
+    src: local('BebasNeue-Regular'),
+         url('C:/Users/Niki/Documents/fonts/BebasNeue-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'ChareInk-Bold';
+  src: local('ChareInk-Bold'),
+       url('C:/Users/Niki/Documents/fonts/ChareInk-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Segoe UI Bold';
+  src: local('Segoe UI Bold'),
+       url('C:/Users/Niki/Documents/fonts/Segoe UI Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Segoe UI Bold';
+  src: local('Segoe UI Bold'),
+       url('C:/Users/Niki/Documents/fonts/Segoe UI Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Avoda';
+  src: local('Avoda'),
+       url('C:/Users/Niki/Documents/fonts/Avoda.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Mayfest-YzeaO';
+  src: local('Mayfest-YzeaO'),
+       url('C:/Users/Niki/Documents/fonts/Mayfest-YzeaO.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Fluence-gx4q3';
+  src: local('Fluence-gx4q3'),
+       url('C:/Users/Niki/Documents/fonts/Fluence-gx4q3.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'DolomanPavljenko';
+  src: local('DolomanPavljenko'),
+       url('C:/Users/Niki/Documents/fonts/DolomanPavljenko.otf') format('truetype');
+}
+*{
+    margin: 0rem;
+    scroll-snap-type: y proximity;
+}
+.second_main_page, .site-header, .third_main_page{
+  scroll-snap-align: start;
+}
+.site-header {
+    background:#8B9D77;
+    height: 115rem;
+    width: 1910rem;
+    margin:0;
+}
+.title {
+    display: inline-block;
+    font-family: 'Corbel';
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 46rem;
+    margin-left: 1.5%;
+    margin-top: 1.4%;
+    width: 15%;
+    margin-right: 0rem;
+    height: 15%;
+    color: #EDC5AB;
+    cursor: pointer;
+    
+}
+.button1 {
+  display: inline;
+  margin-bottom: 1%;
+  margin-left: 68%;
+  text-align: center;
+  /*font-family: 'Segoe UI Bold';*/
+  font-family: 'Corbel';
+  outline: none;
+  height: 40rem;
+  text-align: center;
+  width: 130rem;
+  border-radius: 40rem;
+  background: #EDC5AB;
+  border: 2rem solid #EDC5AB;
+  color: #8B9D77;
+  letter-spacing: 1rem;
+  text-shadow: 0;
+  font-size: 14rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+.button1:hover {
+  color: #EDC5AB;
+  background: #37745B;
+}
+.button1:active {
+  letter-spacing: 2rem;
+}
+.button1:after {
+  content: "Get in touch";
+}
+
+.button2 {
+  margin-left: 2%;
+  text-align: center;
+  /*font-family: 'Segoe UI Bold';*/
+  font-family: 'Corbel';
+  outline: none;
+  text-align: center;
+  border-radius: 40rem;
+  background: #EDC5AB;
+  border: 2rem solid #EDC5AB;
+  color: #8B9D77;
+  letter-spacing: 1rem;
+  text-shadow: 0;
+  width: 40rem;
+  height: 40rem;
+  font-size: 14rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+.button2:hover {
+  color: #EDC5AB;
+  background: #37745B;
+}
+.button2:active {
+  letter-spacing: 2rem;
+}
+.button2:after {
+  content: "In";
+}
+.horizon{
+  margin-left: 1.5%;
+  width: 96%;
+  background: #EDC5AB;
+  border-bottom: 3rem solid #EDC5AB;
+}
+.main_page{
+  background:#8B9D77;
+  height: 892rem;
+  width: 1910rem;
+  margin:0;
+}
+.menu{
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+  padding-top: 20rem ;
+  flex-wrap: wrap;
+  width: 100rem;
+  height: 200rem;
+  float: right;
+  margin-right: 50rem;
+}
+.menu a{
+  text-decoration: none;
+  font-family: 'DolomanPavljenko';
+  font-weight: bold;
+  color:#37745B;
+  font-size: 20rem;
+}
+.search{
+  padding-left: 12rem;
+  height: 20rem;
+  width: 70rem;
+}
+.catalog{
+  padding-left: 24rem;
+}
+.about{
+  padding-left: 6rem;
+}
+.search:after{
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 100rem;
+  width: 0;
+  height: 1rem;
+  background-color: #37745B;
+  transition: width 0.5s; 
+}
+.search:hover:after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 100rem;
+  width: 100%;
+  height: 1rem;
+  background-color: #37745B; 
+  transition: width 0.5s; 
+}
+.vertical{
+  border-left: 3rem solid #EDC5AB;
+  height: 93.2%;
+  float: right; 
+  margin-right: 3%;
+  margin-top: 3%;
+  background: #EDC5AB;
+}
+.first_preview, .second_preview{
+  float: right;
+  font-family: 'Segoe UI Bold';
+  margin-right: 15%;
+  width: 400rem;
+  font-size: 28rem;
+  color:#37745B;
+}
+.first_preview{
+  padding-top: 50rem;
+}
+.second_preview{
+  padding-top: 45rem;
+  padding-left: 370rem;
+}
+.heading_1{
+  padding-top: 350rem;
+  padding-left: 300rem;
+  z-index: -1;
+}
+.heading_3{
+  padding-left: 270rem;
+}
+.heading_1, .heading_3{
+  font-family: 'Fluence-gx4q3';
+  font-size: 130rem;
+  height: 135rem;
+}
+.heading_2{
+  font-family: 'Segoe UI Bold';
+  padding-left: 80rem;
+  font-size: 130rem;
+  height: 145rem;
+  padding-bottom: 30rem;
+}
+.heading_1, .heading_2, .heading_3{
+  color:#37745B;
+  width: 700rem;
+}
+.second_main_page{
+  background:#37745B;
+  height: 1007rem;
+  width: 1910rem;
+  margin: 0;
+}
+.main_question{
+  font-family: 'Segoe UI Bold';
+  margin-top: 150rem;
+  display: inline-block;
+  margin-left: 46%;
+  height: 20rem;
+  width: 400rem;
+  font-size: 20rem;
+  color:#EDC5AB;
+}
+.horizon_2{
+  margin-left: 3%;
+  margin-top: 4%;
+  width: 92%;
+  background: #EDC5AB;
+  border-bottom: 1rem solid #EDC5AB;
+}
+.preview{
+  font-family: 'Segoe UI Bold';
+  margin-left: 15%;
+  display: inline-block;
+  margin-top: 4%;
+  width: 1300rem;
+  font-size: 55rem;
+  color:#EDC5AB;
+  text-align: center;
+}
+.button3 {
+  margin-top: 50rem;
+  margin-left: 870rem;
+  text-align: center;
+  /*font-family: 'Segoe UI Bold';*/
+  font-family: 'Corbel';
+  outline: none;
+  text-align: center;
+  border-radius: 160rem;
+  background: #EDC5AB;
+  border: 2rem solid #EDC5AB;
+  color: #37745B;
+  text-shadow: 0;
+  width: 160rem;
+  height: 160rem;
+  font-size: 20rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  display: flex;
+}
+.button3:hover {
+  box-shadow: 0rem 0rem 10rem 10rem rgba(0, 0, 0, .2);
+}
+.button3:active {
+  box-shadow: 0rem 0rem 20rem 20rem rgba(0, 0, 0, .2);
+}
+.button3:after {
+  content: "ABOUT US";
+  padding-top: 65rem;
+  padding-left: 25rem;
+}
+.third_main_page{
+  background:#8B9D77;
+  height: 2014rem;
+  width: 1910rem;
+  margin: 0;
+}
+.top_six{
+  font-family: 'Segoe UI Bold';
+  font-weight: bold;
+  margin-top: 100rem;
+  display: inline-block;
+  margin-left: 39.5%;
+  height: 20rem;
+  width: 400rem;
+  font-size: 36rem;
+  color:#37745B;
+}
+h2{
+  text-align: center;
+  font-family: 'Segoe UI Bold';
+  color:#37745B;
+}
+p{
+  font-family: 'Segoe UI Bold';
+  color:#37745B;
+  padding: 10rem;
+}
+.container{
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+  padding-top: 20rem ;
+  flex-wrap: wrap;
+}
+.container .box{
+  position: relative;
+  width: 500rem;
+  height: 700rem;
+  margin: 57rem 30rem;
+  transition: 0.5s;
+  background-color: #EDC5AB;
+  box-shadow: 20rem -15rem 10rem 5rem rgba(0, 0, 0, .2);
+  border-radius: 10rem;
+}
+.container .box:hover{
+  transform: translateY(-20rem);
+}
+.container .box .first_card{
+  width: 450rem;
+  height: 520rem;
+}
+.container .box .second_card{
+  padding-left: 20rem;
+  width: 450rem;
+  height: 520rem;
+}
+.container .box .third_card{
+  width: 450rem;
+  height: 520rem;
+  padding-left: 20rem;
+}
+.container .box .content{
+  cursor: pointer;
+}
+.container .box .second_card_2{
+  padding-bottom: 40rem;
+  padding-top: 80rem;
+  padding-left: 20rem;
+  width: 400rem;
+  height: 400rem;
+}
+.container .box .third_card_2{
+  width: 450rem;
+  height: 520rem;
+  padding-left: 10rem;
+}
+.view{
+  height: 20rem;
+  width: 325rem;
+  font-size: 36rem;
+  color:#37745B;
+  display: inline-block;
+  font-family: 'Segoe UI Bold';
+  font-weight: bold;
+  margin-top: 50rem;
+  margin-left: 780rem;
+  position: relative;
+  text-decoration: none;
+}
+.view:after{
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -30rem;
+  width: 0;
+  height: 3rem;
+  background-color: #EDC5AB;
+  transition: width 0.5s; 
+}
+.view:hover:after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -30rem;
+  width: 100%;
+  height: 3rem;
+  background-color: #37745B; 
+  transition: width 0.5s; 
+}
+.box .content a{
+  text-decoration: none;
+}
+.footer{
+  background:#37745B;
+  height: 1007rem;
+  width: 1910rem;
+  margin: 0;
+}
