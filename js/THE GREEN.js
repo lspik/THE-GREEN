@@ -1,17 +1,20 @@
-$(function() {
-    $( "#button" ).click(function() {
-      $( "#button" ).addClass( "onclic", 250, validate);
-    });
-  
-    function validate() {
-      setTimeout(function() {
-        $( "#button" ).removeClass( "onclic" );
-        $( "#button" ).addClass( "validate", 450, callback );
-      }, 2250 );
-    }
-      function callback() {
-        setTimeout(function() {
-          $( "#button" ).removeClass( "validate" );
-        }, 1250 );
+window.onload = () => {
+  let input = document.querySelector('#input');
+
+  input.oninput = function() {
+      let value = this.value.trim();
+      let list = document.querySelectorAll('.container .box');
+
+      if(value) {
+          list.forEach(elem => {
+              if (elem.innerText.search(value) == -1) {
+                  elem.classList.add('hide');
+              }
+          });
+      } else {
+          list.forEach(elem => {
+              elem.classList.remove('hide');
+          });
       }
-    });
+  };
+};

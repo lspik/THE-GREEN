@@ -1,0 +1,717 @@
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #fefae0f7;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #335529;
+    border-radius: .8rem;
+  }
+  @keyframes rotating {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  @font-face {
+      font-family: 'BebasNeue-Regular';
+      src: local('BebasNeue-Regular'),
+           url('C:/Users/Niki/Documents/fonts/BebasNeue-Regular.ttf') format('truetype');
+  }
+  @font-face {
+    font-family: 'ChareInk-Bold';
+    src: local('ChareInk-Bold'),
+         url('C:/Users/Niki/Documents/fonts/ChareInk-Bold.ttf') format('truetype');
+  }
+  @font-face {
+    font-family: 'Segoe UI Bold';
+    src: local('Segoe UI Bold'),
+         url('C:/Users/Niki/Documents/fonts/Segoe UI Bold.ttf') format('truetype');
+  }
+  @font-face {
+    font-family: 'Segoe UI Bold';
+    src: local('Segoe UI Bold'),
+         url('C:/Users/Niki/Documents/fonts/Segoe UI Bold.ttf') format('truetype');
+  }
+  @font-face {
+    font-family: 'Avoda';
+    src: local('Avoda'),
+         url('C:/Users/Niki/Documents/fonts/Avoda.ttf') format('truetype');
+  }
+  @font-face {
+    font-family: 'Mayfest-YzeaO';
+    src: local('Mayfest-YzeaO'),
+         url('C:/Users/Niki/Documents/fonts/Mayfest-YzeaO.ttf') format('truetype');
+  }
+  @font-face {
+    font-family: 'Fluence-gx4q3';
+    src: local('Fluence-gx4q3'),
+         url('C:/Users/Niki/Documents/fonts/Fluence-gx4q3.ttf') format('truetype');
+  }
+  @font-face {
+    font-family: 'DolomanPavljenko';
+    src: local('DolomanPavljenko'),
+         url('C:/Users/Niki/Documents/fonts/DolomanPavljenko.otf') format('truetype');
+  }
+  *{
+      margin: 0;
+      scroll-snap-type: y proximity;
+  }
+  html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+  }
+  .second_about_page, .third_about_page, .footer, .about_page{
+    scroll-snap-align: start;
+  }
+.title {
+    display: inline-block;
+    font-family: 'Corbel';
+    text-decoration: none;
+    background: linear-gradient(118deg, rgba(26, 37, 11) 3%, rgba(40,54,24,1) 12%, rgba(40,54,24,1) 86%, rgba(26, 37, 11) 97%);
+    box-shadow: .2rem .5rem 1rem .5rem rgba(0, 0, 0, .2);
+    font-size: 1.3vw;
+    padding-top: 0.2vh;
+    margin-left: 3.5%;
+    margin-top: 3.4%;
+    width: 10vw;
+    border-radius: 9vw;
+    margin-right: 0;
+    height: 3.3vh;
+    color: #fefae0f7;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold; 
+}
+.about_page{
+  background:#606C38;
+  height: 100vh;
+  width: 99.5vw;
+  margin:0;
+  border-radius: 3rem;
+  display: block;
+}
+.menu_block{
+  margin-top: 4rem;
+  width: 18.7rem;
+  height: 21.5rem;
+  float: right;
+  margin-right: 5rem;
+  background: radial-gradient(circle, rgba(40,54,24,1) 63%, rgba(26, 37, 11) 100%);
+  box-shadow: 0rem 0rem .6rem .6rem rgba(0, 0, 0, .2);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 1rem;
+  position: relative;
+}
+.menu_block a{
+  text-decoration: none;
+  font-family: 'Corbel';
+  font-weight: bold;
+  color:#fefae0f7;
+  font-size: 2.4rem;
+}
+.menu_block .home{
+  margin-top: 8rem;
+}
+.menu{
+  top: 3rem;
+  left: 5rem;
+  background-color:#606C38;
+  box-shadow: .2rem .5rem 1rem .5rem rgba(0, 0, 0, .2);
+  width: 8.5rem;
+  height: 3rem;
+  position: absolute;
+  border-radius: 9rem;
+}
+.marquee-infinite {
+    position: absolute;
+    top:28rem;
+    width:100%;
+    font-family: "Segoe UI Bold";
+    max-width: 100%;
+    overflow: hidden;
+  }
+  .marquee-infinite h3 {
+    white-space: nowrap;
+    font-size:6.83rem;
+    width: 100%;
+  }
+  .milk, .milk_1{
+    color:#FEFAE0;
+  }
+  .green, .green_1, .green_2{
+    color:#283618;
+  }
+  @keyframes marquee-infinite {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50.2%);
+    }
+  }
+.heading{
+  font-family: 'Segoe UI Bold';
+  text-shadow: .4rem .3rem .3rem rgba(0, 0, 0, .2);
+  font-size: 16rem;
+  height: 16.5rem;
+  color:#283618;
+  width: 90rem;
+  margin-top: 27rem;
+  margin-left: 33rem;
+}
+.rectangle_1, .rectangle_2{
+    position: absolute;
+    width: 25.799rem;
+    height: 30.971rem;
+    background: rgba(254, 250, 224, 0.5);
+    box-shadow: 2rem -1.5rem 1rem.5rem rgba(0, 0, 0, 0.25);
+    border-radius: 3rem;
+}
+.rectangle_1{
+    top: 33rem;
+    left: 136rem;
+    transform: rotate(20deg);
+    z-index: 2;
+}
+.rectangle_2{
+    transform: rotate(40deg);
+    left: 152rem;
+    top: 44rem;
+    z-index: 1;
+}
+.line_1, .line_2, .line_3, .line_4, .line_5, .line_6{
+    position: absolute;
+    background: #D9D9D9;
+    filter: blur(2.5rem);
+}
+.line_1, .line_3, .line_4, .line_6{
+    width: 1.5rem;
+    height: 21.357rem;
+    top: 5rem;
+}
+.line_1, .line_4{
+    left: 3rem;
+}
+.line_3, .line_6{
+    left: 21rem;
+}
+.line_2, .line_5{
+    width: 18.855rem;
+    height: 1.627rem;
+    top: 1rem;
+    left: 3.5rem;
+}
+.marquee-infinite-1 {
+    transform: rotate(-180deg);
+    position: absolute;
+    top:60rem;
+    right: 0rem;
+    width:100%;
+    font-family: "Segoe UI Bold";
+    max-width: 100%;
+    overflow: hidden;
+    z-index: 0;
+  }
+  .marquee-infinite-1 h3 {
+    white-space: nowrap;
+    font-size:6.83rem;
+    width: 100%;
+  }
+.since{
+  display: inline-block;
+  font-family: 'Segoe UI';
+  text-decoration: none;
+  background: radial-gradient(circle, rgba(40,54,24,1) 68%, rgba(26, 37, 11) 100%);
+  box-shadow: 0rem 0rem .8rem .8rem rgba(0, 0, 0, .2);
+  font-size: 2.3rem;
+  padding-top: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+  margin-left: 3.5%;
+  margin-top: 18.39%;
+  width: 9.9rem;
+  border-radius: 9rem;
+  margin-right: 0;
+  height: 3.1rem;
+  color: #fefae0f7;
+  text-align: center;
+  line-height: 3.1rem;
+}
+.submit{
+  float: right;
+  margin-top: 18.3%;
+  background: radial-gradient(circle, rgba(40,54,24,1) 78%, rgb(26, 37, 11) 100%);
+  box-shadow: 0rem 0rem .8rem .9rem rgba(0, 0, 0, .2);
+  color: #fefae0f7;
+  text-align: center;
+  font-size: 2.3rem;
+  font-family: 'Segoe UI';
+  border-radius: 9rem;
+  margin-right: 3.5%;
+  height: 3.1rem;
+  width: 21.2rem;
+  padding: 1rem;
+}
+.second_about_page{
+    height: 100vh;
+    width: 99.5vw;
+    background: #283618;
+    border-radius: 3rem;
+    position: relative;
+  }
+.table, .table_1{
+    border-radius: 3rem;
+    background: rgba(254, 250, 224, 0.795);
+    width: 170rem;
+    height: 70rem;
+    top: 14rem;
+    position: absolute;
+}
+.table{
+    right: 20rem;
+    box-shadow: 0rem 0rem .8rem .9rem rgba(0, 0, 0, .2);
+    transition: 0.5s; 
+}
+.table:hover{
+    transform: translateX(2rem);
+}
+.table > img{
+    position: absolute;
+    top: 8rem;
+    left: 1rem;
+    border-radius: 3rem;
+    width: 80rem;
+    height: 53.3rem;
+}
+.table > .text{
+    font-family: 'Corbel';
+    font-size: 2.8rem;
+    color:#606C38;
+    position: absolute;
+    right: 4rem;
+    top: 21rem;
+    width: 80rem;
+}
+.table > .p_head{
+    font-family: 'Corbel';
+    font-weight: bold;
+    font-size: 3rem;
+    color:#606C38;
+    position: absolute;
+    text-align: center;
+    right: 4rem;
+    width: 82rem;
+    top: 10rem;
+}
+.third_about_page{
+    background: #606C38;
+    height: 100vh;
+    width: 99.5vw;
+    border-radius: 3rem;
+    position: relative;
+}
+.table_1{
+    left: 20rem;
+    box-shadow: 0rem 0rem .8rem .9rem rgba(0, 0, 0, .2);
+    transition: 0.5s; 
+}
+.table_1:hover{
+    transform: translateX(-2rem);
+}
+.table_1 > img{
+    position: absolute;
+    top: 8rem;
+    right: 1rem;
+    border-radius: 3rem
+}
+.table_1 > .text{
+    font-family: 'Corbel';
+    font-size: 2.8rem;
+    color:#283618;
+    position: absolute;
+    left: 4rem;
+    top: 21rem;
+    width: 80rem;
+}
+.table_1 > .p_head{
+    font-family: 'Corbel';
+    font-weight: bold;
+    font-size: 3rem;
+    color:#283618;
+    position: absolute;
+    text-align: center;
+    width: 82rem;
+    top: 10rem;
+}
+.footer{
+    background:#283618;
+    height: 100vh;
+    width: 99.5vw;
+    margin: 0;
+    border-radius: 3rem;
+    position: relative;
+}
+.head_words_1{
+    font-family: 'Corbel';
+    font-size: 2.4rem;
+    color: #FEFAE0;
+    position: absolute;
+    left: 82rem;
+    width: 26.1rem;
+    top: 4.7rem;
+}
+.head_words_2{
+    font-family: 'Corbel';
+    font-size: 2.4rem;
+    color: #FEFAE0;
+    position: absolute;
+    left: 80rem;
+    top: 7.8rem;
+    width: 26.1rem;
+}
+.back_to_top__title{
+    width: 125px;
+    height: 25px;
+    font-family: 'Corbel';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    top: 8.1rem;
+    color:#FEFAE0;
+    position: absolute;
+    padding: 0;
+    cursor: pointer;
+    left: 159.3rem;
+}
+.arrow_img_1{
+    margin-left: 1.55rem;
+    margin-top: 2.9rem;
+    width: 8rem;
+    height: 5rem;
+    transform: rotate(-180deg);
+}
+.back_to_top__button{
+    display: inline-block;
+    background-color:#fefae0f7;
+    width: 11.1rem;
+    height: 11.1rem;
+    box-shadow: 0rem 0rem .8rem .8rem rgba(0, 0, 0, .2);
+    border-radius: 90%;
+    position: absolute;
+    cursor: pointer;
+    left: 173.2rem;
+    top: 3.2rem;
+}
+.horizon_3{
+    left:8.5rem;
+    top: 19.4rem;
+    width: 92%;
+    background: #fefae0f7;
+    border-bottom: .1rem solid #fefae0f7;
+    position: absolute;
+}
+.marquee-infinite-2-2 {
+    position: absolute;
+    top:28rem;
+    width:100%;
+    font-family: "Segoe UI Bold";
+    max-width: 100%;
+    overflow: hidden;
+}
+.marquee-infinite-2-2 div {
+    display: flex;
+    width: 200%;
+    animation: marquee-infinite 10s linear infinite;
+}
+.marquee-infinite-2-2 h3 {
+    white-space: nowrap;
+    font-size:8.5rem;
+    width: 100%;
+}
+.milk_2_1, .milk_1_1{
+    color:#FEFAE0;
+}
+.green_2_1, .green_1_1{
+    color:#606C38;
+}
+@keyframes marquee-infinite {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50.2%);
+    }
+}
+.everywhere{
+    box-shadow: 0rem 0rem .8rem .9rem rgba(0, 0, 0, .2);
+    font-family: 'Segoe UI Bold';
+    font-size: 12.8rem;
+    color:#283618;
+    background-color:#FEFAE0;
+    width: 181rem;
+    height: 20.4rem;
+    padding: 2rem;
+    position: absolute;
+    top: 40.6rem;
+    text-align: center;
+    left: 3rem;
+    border-radius:3rem;
+}
+.marquee-infinite-1-1 {
+    position: absolute;
+    top:67rem;
+    width:100%;
+    font-family: "Segoe UI Bold";
+    max-width: 100%;
+    overflow: hidden;
+}
+.marquee-infinite-1-1 div {
+    display: flex;
+    width: 200%;
+    animation: marquee-infinite-1 10s linear infinite;
+}
+.marquee-infinite-1-1 h3 {
+    white-space: nowrap;
+    font-size:8.5rem;
+    width: 100%;
+}
+@keyframes marquee-infinite-1 {
+    0% {
+        transform: translateX(-50.2%);
+    }
+    100% {
+          transform: translateX(0%);
+    }
+}
+.horizon_4{
+    left:8.5rem;
+    top: 87rem;
+    width: 92%;
+    background: #fefae0f7;
+    border-bottom: .1rem solid #fefae0f7;
+    position: absolute;
+}
+.hrefs{
+    text-decoration: underline;
+    font-size: 2.4rem;
+    font-family: "Segoe UI Bold";
+    left:79.5rem;
+    top: 93rem;
+    position: absolute;
+    color:#283618
+}
+.hrefs a{
+    color: #FEFAE0;
+}
+.hrefs a:hover{
+    color: #606C38;
+}
+@media (max-width: 1540px) and (min-width: 1024px){
+  .title{
+    padding-top: 0.1rem;
+  }
+  .about_page{
+    width: 152.8rem;
+    height: 76rem;
+    border-radius: 3rem;
+  }
+  .menu_block{
+    margin-top: 4rem;
+    width: 13.7rem;
+    height: 16.5rem;
+    margin-right: 5rem;
+  }
+  .menu_block a{
+    font-size: 1.7rem;
+    padding-top: 0.5rem;
+  }
+  .menu{
+    top: 2rem;
+    left: 3.8rem;
+    width: 6.5rem;
+    height: 2.5rem;
+  }
+  .marquee-infinite {
+    top: 20rem;
+  }
+  .heading{
+    margin-top: 20rem;
+    margin-left: 25rem;
+  }
+  .marquee-infinite-1 {
+    top:50rem;
+  }
+  .rectangle_1{
+    top: 33rem;
+    left: 106rem;
+  }
+  .rectangle_2{
+    left: 113rem;
+    top: 38rem;
+  }
+  .rectangle_1, .rectangle_2{
+    width: 15.799rem;
+    height: 20.971rem;
+  }
+  .menu_block .home{
+    margin-top: 6rem;
+  }
+  .line_1, .line_3, .line_4, .line_6{
+    height: 20.357rem;
+    top: 1rem;
+  }
+  .line_1, .line_4{
+    left: 1rem;
+  }
+  .line_3, .line_6{
+    left: 12rem;
+  }
+  .line_2, .line_5{
+    width: 11.855rem;
+    left: 1.5rem;
+  }
+  .since{
+    font-size: 2.2rem;
+    padding-top: 0.1rem;
+    margin-top: 15.39%;
+    width: 8.5rem;
+    height: 2.5rem;
+  }
+  .submit{
+    margin-top: 14.8%;
+    font-size: 2rem;
+    margin-right: 3.5%;
+    height: 2.5rem;
+    width: 18.2rem;
+    padding: 1rem;
+    padding-top: 0.8rem;
+  }
+  .table, .table_1{
+    width: 100rem;
+    height: 41rem;
+    top: 14rem;
+  }
+  .table{
+    right: 50rem; 
+  }
+  .table > img{
+    top: 5rem;
+    width: 47rem;
+    height: 31.4rem;
+  }
+  .table > .text{
+    font-size: 1.8rem;
+    top: 12rem;
+    width: 45rem;
+  }
+  .table > .p_head{
+    font-size: 2.4rem;
+    width: 45rem;
+    top: 7rem;
+  }
+  .table_1{
+    left: 50rem; 
+  }
+  .table_1 > img{
+    top: 5rem;
+    width: 47rem;
+    height: 31.4rem;
+  }
+  .table_1 > .text{
+    font-size: 1.8rem;
+    left: 4rem;
+    top: 12rem;
+    width: 45rem;
+  }
+  .table_1 > .p_head{
+    font-size: 2.4rem;
+    width: 45rem;
+    top: 5rem;
+  }
+  .head_words_1{
+    font-size: 2rem;
+    left: 69rem;
+    width: 21.1rem;
+    top: 4rem;
+  }
+    .head_words_2{
+    font-size: 2rem;
+    left: 67rem;
+    top: 6.3rem;
+    width: 21.1rem;
+  }
+  .back_to_top__title{
+    font-size: 1.6rem;
+    top: 6.3rem;
+    left: 124.7rem;
+  }
+  .arrow_img_1{
+    width: 5rem;
+    height: 2rem;
+  }
+  .back_to_top__button{
+    width: 8.1rem;
+    height: 8.1rem;
+    left: 137.2rem;
+    top: 3.2rem;
+  }
+  .horizon_3{
+    left: 4.7rem;
+    top: 13.4rem;
+  }
+  .marquee-infinite-2-2 {
+    top: 15rem;
+  }
+  .marquee-infinite-2-2 h3 {
+    font-size: 7.5rem;
+  }
+  @keyframes marquee-infinite {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-55.3%);
+    }
+  }
+  .everywhere{
+    font-size: 9.8rem;
+    width: 141rem;
+    height: 15rem;
+    top: 25.6rem;
+  }
+  .marquee-infinite-1-1 {
+    top: 45rem;
+  }
+  .marquee-infinite-1-1 h3 {
+    font-size: 7.5rem;
+  }
+  @keyframes marquee-infinite-1 {
+    0% {
+        transform: translateX(-55.3%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+  }
+  .horizon_4{
+    left: 4.7rem;
+    top: 57rem;
+  }
+  .hrefs{
+    font-size: 2rem;
+    left: 64.5rem;
+    top: 69rem;
+  }
+  .about_page, .second_about_page, .third_about_page, .footer{
+    width: 99.4vw;
+  }
+}
